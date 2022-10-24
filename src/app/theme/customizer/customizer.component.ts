@@ -1,6 +1,6 @@
-import { Component, Output, EventEmitter, ViewEncapsulation, TemplateRef } from '@angular/core';
-import { AppSettings, SettingsService } from '@core';
 import { CdkDragStart } from '@angular/cdk/drag-drop';
+import { Component, EventEmitter, Output, TemplateRef, ViewEncapsulation } from '@angular/core';
+import { AppSettings, SettingsService } from '@core';
 import { MtxDrawer, MtxDrawerRef } from '@ng-matero/extensions/drawer';
 
 @Component({
