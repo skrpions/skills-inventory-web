@@ -1,5 +1,5 @@
-import { Injectable, Injector } from '@angular/core';
 import { LOCATION_INITIALIZED } from '@angular/common';
+import { Injectable, Injector } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { SettingsService } from './settings.service';
 
@@ -18,7 +18,7 @@ export class TranslateLangService {
       const locationInitialized = this.injector.get(LOCATION_INITIALIZED, Promise.resolve());
       locationInitialized.then(() => {
         const browserLang = navigator.language;
-        const defaultLang = browserLang.match(/en-US|zh-CN|zh-TW/) ? browserLang : 'en-US';
+        const defaultLang = browserLang.match(/en-US|es-ES|zh-CN|zh-TW/) ? browserLang : 'en-US';
 
         this.settings.setLanguage(defaultLang);
         this.translate.setDefaultLang(defaultLang);

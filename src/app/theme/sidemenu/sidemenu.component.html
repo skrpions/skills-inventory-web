@@ -4,7 +4,7 @@
 
 <ng-template #menuListTpl let-menuList="menuList" let-parentRoute="parentRoute" let-level="level">
   <ul navAccordion class="matero-sidemenu {{level>0 ? 'matero-sidemenu-sub' : ''}} level-{{level}}">
-    <ng-container *ngFor="let menuItem of menuList">
+    <ng-container *ngFor="let menuItem of menuList; let index = index">
       <ng-template [ngxPermissionsOnly]="menuItem.permissions?.only"
                    [ngxPermissionsExcept]="menuItem.permissions?.except">
 

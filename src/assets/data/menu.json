@@ -1,7 +1,7 @@
 {
   "menu": [
     {
-      "route": "dashboard",
+      "route": "dashboardx2",
       "name": "dashboard",
       "type": "link",
       "icon": "dashboard",
@@ -9,6 +9,24 @@
         "color": "red-500",
         "value": "5"
       }
+    },
+    {
+      "route": "dashboardx",
+      "name": "users",
+      "type": "link",
+      "icon": "groups"
+    },
+    {
+      "route": "dashboardx",
+      "name": "developers",
+      "type": "link",
+      "icon": "settings_ethernet"
+    },
+    {
+      "route": "dashboardx",
+      "name": "reports",
+      "type": "link",
+      "icon": "equalizer"
     },
     {
       "route": "design",

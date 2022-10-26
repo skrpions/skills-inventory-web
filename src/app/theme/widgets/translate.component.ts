@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
 import { SettingsService } from '@core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-translate',
@@ -20,12 +20,13 @@ import { SettingsService } from '@core';
 export class TranslateComponent {
   langs = {
     'en-US': 'English',
+    'es-ES': 'Spanish',
     'zh-CN': '中文简体',
     'zh-TW': '中文繁体',
   };
 
   constructor(private translate: TranslateService, private settings: SettingsService) {
-    translate.addLangs(['en-US', 'zh-CN', 'zh-TW']);
+    translate.addLangs(['en-US', 'es-ES','zh-CN', 'zh-TW']);
   }
 
   useLanguage(language: string) {
