@@ -21,6 +21,8 @@
     "paths": {
       "@core": ["app/core"],
       "@core/*": ["app/core/*"],
+			"@routes": ["app/routes"],
+			"@routes/*": ["app/routes/*"],
       "@shared": ["app/shared"],
       "@shared/*": ["app/shared/*"],
       "@theme": ["app/theme"],

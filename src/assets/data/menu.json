@@ -1,34 +1,35 @@
 {
   "menu": [
-    {
-      "route": "dashboardx2",
-      "name": "dashboard",
-      "type": "link",
-      "icon": "dashboard",
-      "badge": {
-        "color": "red-500",
-        "value": "5"
+      {
+        "route": "dashboard",
+        "name": "dashboard",
+        "type": "link",
+        "icon": "dashboard",
+        "badge": {
+          "color": "red-500",
+          "value": "5"
+        }
+      },
+      {
+        "route": "users",
+        "name": "users",
+        "type": "link",
+        "icon": "groups"
+      },
+      {
+        "route": "developers",
+        "name": "developers",
+        "type": "link",
+        "icon": "settings_ethernet"
+      },
+      {
+        "route": "reports",
+        "name": "reports",
+        "type": "link",
+        "icon": "equalizer"
       }
-    },
-    {
-      "route": "dashboardx",
-      "name": "users",
-      "type": "link",
-      "icon": "groups"
-    },
-    {
-      "route": "dashboardx",
-      "name": "developers",
-      "type": "link",
-      "icon": "settings_ethernet"
-    },
-    {
-      "route": "dashboardx",
-      "name": "reports",
-      "type": "link",
-      "icon": "equalizer"
-    },
-    {
+
+    ,{
       "route": "design",
       "name": "design",
       "type": "sub",
@@ -494,5 +495,6 @@
         "only": "ADMIN"
       }
     }
+
   ]
 }

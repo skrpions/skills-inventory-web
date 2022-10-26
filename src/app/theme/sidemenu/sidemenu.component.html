@@ -48,10 +48,10 @@
                         }">
           </ng-container>
         </li>
-
       </ng-template>
     </ng-container>
   </ul>
+
 </ng-template>
 
 <ng-template #linkTypeTpl let-item="item" let-level="level">
@@ -68,3 +68,23 @@
     {{item.type==='sub' ? 'arrow_drop_down' : 'launch'}}
   </mat-icon>
 </ng-template>
+
+<!-- Termina -->
+<mat-nav-list>
+
+    <mat-divider></mat-divider>
+
+    <h2 matSubheader> Termina</h2>
+
+    <!-- Acerca de -->
+    <a  class="matero-sidemenu-link" mat-list-item routerLinkActive="list-item-active" routerLink="./acerca">
+      <mat-icon mat-list-icon class="blue-icon">help</mat-icon> Skills Inventory
+    </a>
+
+    <!-- Salir -->
+    <a  class="matero-sidemenu-link" mat-list-item routerLinkActive="list-item-active">
+      <mat-icon mat-list-icon class="blue-icon">exit_to_app</mat-icon> Salir
+    </a>
+
+  </mat-nav-list>
+
