@@ -1,0 +1,30 @@
+.round {
+  outline: none;
+  background-color: #fff;
+  width: auto;
+  height: 60px;
+  margin: 0 auto 15px auto;
+  padding: 5px;
+  border: 1px solid #ccc;
+  font-size: 20px;
+  -moz-border-radius: 11px;
+  -webkit-border-radius: 11px;
+  border-radius: 50px;
+  font-family: Montserrat-Regular;
+  margin-left: 275px;
+}
+
+input {
+  text-align: center;
+}
+
+.contenedor {
+  background-color: #ccc;
+  height: 120px;
+  background-size: cover;
+  margin-bottom: 30px;
+}
+
+.mat-drawer-inner-container::-webkit-scrollbar {
+  display: none;
+}

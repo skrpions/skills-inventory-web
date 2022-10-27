@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation, Input } from '@angular/core';
+import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
 import { MenuService } from '@core/bootstrap/menu.service';
 
@@ -9,11 +9,13 @@ import { MenuService } from '@core/bootstrap/menu.service';
   encapsulation: ViewEncapsulation.None,
 })
 export class BreadcrumbComponent implements OnInit {
+
   @Input() nav: string[] = [];
 
   constructor(private router: Router, private menu: MenuService) {}
 
   ngOnInit() {
+
     this.nav = Array.isArray(this.nav) ? this.nav : [];
 
     if (this.nav.length === 0) {
@@ -27,7 +29,11 @@ export class BreadcrumbComponent implements OnInit {
 
   genBreadcrumb() {
     const routes = this.router.url.slice(1).split('/');
+    console.log('👉 routes: ',routes);
+
     this.nav = this.menu.getLevel(routes);
+    console.log('✅ this.nav: ',this.nav);
     this.nav.unshift('home');
   }
+
 }

@@ -1,0 +1,23 @@
+<breadcrumb></breadcrumb>
+
+<!-- 5 Tarjetas -->
+<div fxLayout="row wrap" fxLayoutGap="19.3px" fxLayoutAlign="start space-evenly">
+
+  <div fxFlex="0 0 18.71%" *ngFor="let developer of activeDevelopers">
+    <app-card-developer></app-card-developer>
+  </div>
+
+</div>
+
+<!-- 4 Tarjetas -->
+<!-- <mat-card>
+  <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="10px">
+
+    <div fxFlex="20" fxFlex.lg="24" fxFlex.sm="30"
+         *ngFor="let developer of activeDevelopers">
+      <app-card-developer></app-card-developer>
+
+    </div>
+  </div>
+</mat-card> -->
+
