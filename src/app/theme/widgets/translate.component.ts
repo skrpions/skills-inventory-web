@@ -20,7 +20,7 @@ import { TranslateService } from '@ngx-translate/core';
 export class TranslateComponent {
   langs = {
     'en-US': 'English',
-    'es-ES': 'Spanish',
+    'es-ES': 'Español',
     'zh-CN': '中文简体',
     'zh-TW': '中文繁体',
   };
